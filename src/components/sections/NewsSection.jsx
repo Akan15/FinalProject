@@ -53,7 +53,7 @@ const NewsSection = () => {
         <h2 className="section-title">{t.newsTitle || tRu.newsTitle || 'Новости'}</h2>
         <ul className="news-list">
           {newsItems.map((item, idx) => (
-            <li key={idx} className="news-item">
+            <li key={idx} className={`news-item ${idx % 2 === 0 ? 'zigzag-left' : 'zigzag-right'}`}>
               <a href={item.url} target="_blank" rel="noopener noreferrer" className="news-link">
                 {t[item.key] || tRu[item.key]}
               </a>

@@ -116,7 +116,7 @@
 .info-card {
   background: var(--bg-primary);
   border-radius: var(--radius-3xl);
-  padding: var(--space-4xl);
+  padding: 64px 10px;
   box-shadow: var(--shadow-lg);
   border: 1px solid var(--gray-200);
   position: relative;

@@ -301,8 +301,8 @@ const ContactSection = () => {
             className={`contact-form-container ${isVisible ? "animate-slide-in-right" : ""}`}
           >
             <div className="form-card">
-              <div className="form-header">
-                <div className="form-icon">
+              <div className="form-header" style={{display: 'flex', alignItems: 'center', gap: 'var(--space-lg)', textAlign: 'left', marginBottom: 'var(--space-4xl)'}}>
+                <div className="form-icon" style={{margin: 0}}>
                   <svg
                     width="32"
                     height="32"
@@ -318,8 +318,10 @@ const ContactSection = () => {
                     />
                   </svg>
                 </div>
-                <h3>{t.sendMessageTitle}</h3>
-                <p>{t.contactSubtitle}</p>
+                <div>
+                  <h3 style={{margin: 0}}>{t.sendMessageTitle}</h3>
+                  <p style={{margin: 0}}>{t.contactSubtitle}</p>
+                </div>
               </div>
 
         <form onSubmit={handleSubmit} className="contact-form">

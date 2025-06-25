@@ -513,7 +513,7 @@ export const translations = {
       ]
     },
   },
-  kk: {
+  kz: {
     // Navigation
     about: "Департамент туралы",
     products: "Қосымшалар",

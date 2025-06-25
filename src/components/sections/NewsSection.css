@@ -41,6 +41,18 @@
   transform: translateY(-2px) scale(1.01);
 }
 
+.news-item.zigzag-left {
+  align-self: flex-start;
+  transform: translateX(-40px);
+  background: var(--bg-primary);
+}
+
+.news-item.zigzag-right {
+  align-self: flex-end;
+  transform: translateX(40px);
+  background: var(--bg-primary);
+}
+
 @media (max-width: 768px) {
   .news-section {
     padding: var(--space-5xl) 0;
@@ -53,5 +65,13 @@
   }
   .news-link {
     font-size: var(--text-base);
+  }
+}
+
+@media (max-width: 700px) {
+  .news-item.zigzag-left,
+  .news-item.zigzag-right {
+    align-self: center;
+    transform: none;
   }
 } 

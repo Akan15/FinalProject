@@ -14,10 +14,10 @@ export const LanguageSelector = () => {
         RU
       </button>
       <button
-        className={`lang-btn ${language === 'kk' ? 'active' : ''}`}
-        onClick={() => changeLanguage('kk')}
+        className={`lang-btn ${language === 'kz' ? 'active' : ''}`}
+        onClick={() => changeLanguage('kz')}
       >
-        KK
+        KZ
       </button>
       <button
         className={`lang-btn ${language === 'en' ? 'active' : ''}`}

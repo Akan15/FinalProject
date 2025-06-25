@@ -9,7 +9,7 @@ const FeaturesSection = () => {
     <section className="features-section">
       <div className="container">
         <h2 className="features-title">{t.featuresSection.title}</h2>
-        <ul className="features-list">
+        <ul className="features-list"> {/* теперь двухколоночный grid */}
           {features.map((feature, idx) => (
             <li className="feature-item" key={idx}>
               <span className="feature-icon">✔️</span>
