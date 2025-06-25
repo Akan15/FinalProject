@@ -301,7 +301,7 @@ const ContactSection = () => {
             className={`contact-form-container ${isVisible ? "animate-slide-in-right" : ""}`}
           >
             <div className="form-card">
-              <div className="form-header" style={{display: 'flex', alignItems: 'center', gap: 'var(--space-lg)', textAlign: 'left', marginBottom: 'var(--space-4xl)'}}>
+              <div className="form-header" style={{display: 'flex', alignItems: 'center', gap: 'var(--space-lg)', textAlign: 'left', marginBottom: 'var(--space-4xl)', padding: '20px 0'}}>
                 <div className="form-icon" style={{margin: 0}}>
                   <svg
                     width="32"

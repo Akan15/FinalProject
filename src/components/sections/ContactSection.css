@@ -116,7 +116,7 @@
 .info-card {
   background: var(--bg-primary);
   border-radius: var(--radius-3xl);
-  padding: 64px 10px;
+  padding: 41px 10px;
   box-shadow: var(--shadow-lg);
   border: 1px solid var(--gray-200);
   position: relative;
@@ -138,6 +138,7 @@
 }
 
 .info-header {
+  padding: 20px;
   display: flex;
   align-items: center;
   gap: var(--space-lg);
@@ -381,7 +382,7 @@
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: var(--space-2xl);
+  gap: 11px;
 }
 
 .form-row {
