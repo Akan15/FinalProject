@@ -94,20 +94,7 @@
 }
 
 .services-section .section-title::after {
-  content: "";
-  position: absolute;
-  bottom: -var(--space-md);
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 4px;
-  background: linear-gradient(
-    90deg,
-    var(--primary-blue),
-    var(--primary-blue-light),
-    var(--accent-gold)
-  );
-  border-radius: var(--radius-full);
+  content: none;
 }
 
 .section-subtitle {
