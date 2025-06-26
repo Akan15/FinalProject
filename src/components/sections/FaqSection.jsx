@@ -45,6 +45,21 @@ const FaqSection = () => {
   }, [language]); // Use language as stable dependency to prevent infinite loops
 
   useEffect(() => {
+    let filtered = enhancedFaqs;
+    if (selectedCategory !== "all") {
+      filtered = filtered.filter((faq) => faq.category === selectedCategory);
+    }
+    if (searchTerm) {
+      filtered = filtered.filter(
+        (faq) =>
+          faq.question.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          faq.answer.toLowerCase().includes(searchTerm.toLowerCase()),
+      );
+    }
+    setFilteredFaqs(filtered);
+  }, [searchTerm, selectedCategory, enhancedFaqs]);
+
+  useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -65,26 +80,6 @@ const FaqSection = () => {
       }
     };
   }, []);
-
-  useEffect(() => {
-    let filtered = enhancedFaqs;
-
-    // Filter by category
-    if (selectedCategory !== "all") {
-      filtered = filtered.filter((faq) => faq.category === selectedCategory);
-    }
-
-    // Filter by search term
-    if (searchTerm) {
-      filtered = filtered.filter(
-        (faq) =>
-          faq.question.toLowerCase().includes(searchTerm.toLowerCase()) ||
-          faq.answer.toLowerCase().includes(searchTerm.toLowerCase()),
-      );
-    }
-
-    setFilteredFaqs(filtered);
-  }, [searchTerm, selectedCategory, enhancedFaqs]);
 
   const handleFaqClick = (index) => {
     if (expandedFaq === index) {
@@ -253,7 +248,7 @@ const FaqSection = () => {
             </div>
           ) : (
             <div className="faq-list">
-              {filteredFaqs.map((faq, index) => (
+              {(filteredFaqs || []).map((faq, index) => (
                 <div
                   key={faq.id}
                   className={`faq-item ${expandedFaq === index ? "expanded" : ""}`}

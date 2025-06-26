@@ -2,10 +2,11 @@ export const translations = {
   ru: {
     // Navigation
     about: "О департаменте",
-    products: "Приложения",
+    products: "Продукты",
     instructions: "Инструкции",
     faq: "FAQ",
     contact: "Обратная связь",
+    news: "Новости",
 
     // Hero Section
     heroTitle: "Цифровое правительство",
@@ -516,10 +517,11 @@ export const translations = {
   kz: {
     // Navigation
     about: "Департамент туралы",
-    products: "Қосымшалар",
+    products: "Өнімдер",
     instructions: "Нұсқаулар",
     faq: "Жиі қойылатын сұрақтар",
     contact: "Кері байланыс",
+    news: "Жаңалықтар",
 
     // Hero Section
     heroTitle: "Сандық үкімет",
@@ -1029,10 +1031,11 @@ export const translations = {
   en: {
     // Navigation
     about: "About the department",
-    products: "Applications",
+    products: "Products",
     instructions: "Instructions",
     faq: "FAQ",
     contact: "Contact",
+    news: "News",
 
     // Hero Section
     heroTitle: "Digital Government",

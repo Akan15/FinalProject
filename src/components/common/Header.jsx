@@ -79,8 +79,8 @@ const Header = () => {
   <a href="#products" className="nav-link" onClick={() => setIsMenuOpen(false)}>{t.products}</a>
   <a href="#instructions" className="nav-link" onClick={() => setIsMenuOpen(false)}>{t.instructions}</a>
   <a href="#faq" className="nav-link" onClick={() => setIsMenuOpen(false)}>{t.faq}</a>
-  <a href="#statistics" className="nav-link" onClick={() => setIsMenuOpen(false)}>{t.statistics.title}</a>
-  <a href="#top-services" className="nav-link" onClick={() => setIsMenuOpen(false)}>{t.topServices?.title || "ТОП-услуги"}</a>
+  <a href="#top-services" className="nav-link" onClick={() => setIsMenuOpen(false)}>{t.topServices?.title}</a>
+  <a href="#news" className="nav-link" onClick={() => setIsMenuOpen(false)}>{t.news}</a>
 
   <div className="mobile-language-selector">
     <LanguageSelector />
