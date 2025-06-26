@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:8080/api';
+const API_URL = "https://finalproject-2-w7he.onrender.com/api";
 
 export const submitFeedback = async (feedbackData) => {
   try {
