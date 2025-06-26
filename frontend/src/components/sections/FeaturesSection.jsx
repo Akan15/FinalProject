@@ -2,12 +2,14 @@ import React, { useEffect, useState } from "react";
 import { useLanguage } from "../../context/LanguageContext";
 import "./FeaturesSection.css";
 
+const API_URL = "https://finalproject-2-w7he.onrender.com/api";
+
 const FeaturesSection = () => {
   const { language, t } = useLanguage();
   const [features, setFeatures] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8080/api/features")
+    fetch("https://finalproject-2-w7he.onrender.com/features")
       .then(res => res.json())
       .then(data => Array.isArray(data) ? setFeatures(data) : setFeatures([]))
       .catch(() => setFeatures([]));
